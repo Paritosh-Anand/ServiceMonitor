@@ -1,0 +1,136 @@
+body {
+	background-color: #fffafa;
+	font-size: 15px;
+	margin-top: 10px;
+}
+h3 {
+	border-bottom: 1px solid rgba(53, 86, 129, 0.3);
+	font-family: 'Titillium Web',sans-serif;
+	font-weight: 600;
+	margin: 1em 0 0.5em;
+	position: relative;
+	  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4);
+	  text-transform: uppercase;
+}
+th {
+	background-color: #002fa7;
+	color: #ffffff;
+	padding: 4px 16px;
+	 text-transform: capitalize;
+}
+td {
+	padding: 6px 16px 6px;
+	 text-align: center;
+	 text-transform: uppercase;
+	 white-space: nowrap;
+}
+table td {
+	border: 2px solid black;
+	width: auto;
+	cursor:pointer;
+}
+.dc{
+	vertical-align: top;
+	border: none;
+	padding-left: 15px;
+	padding-right: 2px;
+}
+td.tooltip {
+        outline:none;
+}
+td.tooltip strong {
+        line-height: 30px;
+}
+td.tooltip:hover {
+	text-decoration: underline;
+}
+td.tooltip span{
+	text-transform:lowercase;
+	font-family: "Verdana", "sans-serif";
+        z-index:5;
+	display:none;
+        padding:5px 0px;
+        margin-top:30px;
+        margin-left:-310px;
+        width:550px;
+	line-height:25px;
+	font-size:15px;
+}
+td.tooltip:hover span{
+        display:inline;
+        position:absolute;
+        color:#111;
+        border:1px solid #DCA;
+        background:#fffAF0;
+}
+.callout {
+        z-index:20;
+        position:absolute;
+        top:30px;
+        border:0;
+        left:-12px;
+}
+/*CSS3 extras*/
+#popup, #threshold_popup, #add_new_service
+{
+        border-radius:4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-box-shadow: 5px 5px 8px #CCC;
+        -webkit-box-shadow: 5px 5px 8px #CCC;
+        box-shadow: 5px 5px 8px #CCC;
+}
+#mask
+{
+width:100%;
+height:100%;
+display:none;
+position:absolute;
+top:0;
+left:0;
+background-color: #36454F;
+color: #aaa;
+opacity: .4;
+filter: alpha(opacity=50);
+}
+#popup, #threshold_popup, #add_new_service
+{
+	font-family: "Monaco", "sans-serif";
+	z-index:300;
+        padding:10px 0px;
+	width:650;
+	display:none;
+	position:absolute;
+	top:200px;
+	left:500;
+	color: #111;
+	border: 1px;
+	solid: #DCA;
+	background: #fffAF0;
+	line-height:25px;
+	font-size:15px;
+}
+button {
+	line-height: 12px;
+	width: 28px;
+	font-size: 12pt;
+	font-family: tahoma;
+	margin-top: 1px;
+	margin-right: 2px;
+	position:absolute;
+	top:0;
+	right:0;
+	cursor:pointer;
+ }
+
+#add, #update {
+	display: inline-block;
+	padding: 4px 8px;
+	background-color: #002fa7;
+	color: #ffffff;	
+	cursor: pointer;
+}
+#service, #dc{
+	color: red;
+	text-transform:uppercase;
+}
